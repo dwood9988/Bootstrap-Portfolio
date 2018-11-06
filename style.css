@@ -219,12 +219,49 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
  
   .container {
-    max-height: 960px;
-    max-width: 980px;
+    width: 65%;
+    float: left;
+    margin: 0 30px;
+    height: 100%;
+  }
+
+  #masthead {
+    position: relative;
+    float: right;  
+    margin: 0 auto;
+  
+  }
+  
+  nav {
+    position: absolute;
+    right: 0;
   }  
+
+  nav a {
+    margin-right: 30px;
+  }  
+
 }
 
 @media screen and (max-width: 768px) {
+ 
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  #masthead {
+    float: none;
+  }
+
+  nav {
+    float: none;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
  
   .container {
     width: 100%;
@@ -233,20 +270,20 @@ input[type=submit] {
   }
 
   #masthead {
-    position: fixed;
     float: none;
-    z-index: 99;
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: auto;
-    color: #fff;
-    background: #fff;
-    border-bottom: 2px solid #ccc;
+    position: static;
   }
 
   nav {
+    position: static;
     float: none;
     margin: 0 auto;
     margin-top: 25px;
+    text-align: center;
   }
+
+  #logo {
+    width: 100%;
+  }
+
 }
