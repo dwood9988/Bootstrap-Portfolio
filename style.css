@@ -17,6 +17,8 @@ body {
   max-width: 960px;
   margin: 0 auto;
   clear: both;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 h1,
@@ -24,6 +26,7 @@ h2,
 h3,
 p {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 p:last-child {
